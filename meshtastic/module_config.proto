@@ -749,6 +749,36 @@ message ModuleConfig {
   }
 
   /*
+   * ServoControlModule Config
+   */
+  message ServoControlConfig {
+    /*
+     * Whether the Module is enabled
+     */
+    bool enabled = 1;
+
+    /*
+     * Servo pin number
+     */
+    uint32 gpio_pin = 2;
+
+    /*
+     * Servo position in the opened state
+     */
+    uint32 open_position = 3;
+
+    /*
+     * Servo position in the closed state
+     */
+    uint32 closed_position = 4;
+
+    /*
+     * The public key authorized to control the servo.
+     */
+    repeated bytes authorized_key = 5;
+  }
+
+  /*
    * TODO: REPLACE
    */
   oneof payload_variant {
@@ -816,6 +846,11 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     PaxcounterConfig paxcounter = 13;
+
+    /*
+     * TODO: REPLACE
+     */
+    ServoControlConfig servo_control = 14;
   }
 }
 
