@@ -27,3 +27,9 @@
 *DetectionSensorConfig.monitor_pin int_size:8
 *DetectionSensorConfig.name max_size:20
 *DetectionSensorConfig.detection_trigger_type max_size:8
+
+*ServoControlConfig.gpio_pin int_size:8
+*ServoControlConfig.open_position int_size:8
+*ServoControlConfig.closed_position int_size:8
+*ServoControlConfig.authorized_key max_size:32
+*ServoControlConfig.authorized_key max_count:3
