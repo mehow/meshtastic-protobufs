@@ -2,4 +2,4 @@
 
 ## Overview
 
-This a fork of the official Protobuf message definitions for the Meshtastic project, adding `ServoControlConfig` message to `ModuleConfig`.
+This is a fork of the official Protobuf message definitions for the Meshtastic project, adding `ServoControlConfig` message to `ModuleConfig`.
